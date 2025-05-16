@@ -1,3 +1,5 @@
+package demo;
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -43,7 +45,7 @@ public class Database {
     }
     @Override
     public String toString() {
-        return "Database{" +
+        return "demo.Database{" +
                 "ip='" + ip + '\'' +
                 ", port='" + port + '\'' +
                 ", username='" + username + '\'' +

@@ -16,7 +16,7 @@ management:
             enabled: true
         readinessstate:
             enabled: true
-# Database 접속정보
+# demo.Database 접속정보
 database:
     ip: 10.10.10.1        # 환경에 따라 수정
     port: 1234
