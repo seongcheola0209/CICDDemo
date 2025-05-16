@@ -1,0 +1,24 @@
+# 서버 정보 (접속 url : localhost:8080/app/database)
+server:
+    servlet:
+        context-path: /app     # 톰켓의 루트 디렉토리 설정
+    port: 8080
+# Readinessprobe, Livenessprobe 용
+# /app/actuator/health/liveness, /app/actuator/health/readiness
+
+management:
+    endpoint:
+        health:
+            probes:
+                enabled: true
+    health:
+        livenessstate:
+            enabled: true
+        readinessstate:
+            enabled: true
+# Database 접속정보
+database:
+    ip: 10.10.10.3        # 환경에 따라 수정
+    port: 1234
+    username: prod     # 환경에 따라 수정 (qa, prod)
+    password: prod      #  환경에 따라 수정 (qa, prod)
